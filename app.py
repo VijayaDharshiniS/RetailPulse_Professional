@@ -223,7 +223,7 @@ elif page == "Sales Analytics":
             PROJECT_DIR
             / "data"
             / "processed"
-            / "retailpulse_sales_features.csv"
+            / "retailpulse_sales_features.csv.gz"
         )
 
         df = pd.read_csv(file_path, parse_dates=["InvoiceDate"])
@@ -762,7 +762,7 @@ elif page == "Order Analytics":
             PROJECT_DIR
             / "data"
             / "processed"
-            / "retailpulse_sales_features.csv"
+            / "retailpulse_sales_features.csv.gz"
         )
         df = pd.read_csv(file_path, parse_dates=["InvoiceDate"])
         return df
@@ -869,7 +869,7 @@ elif page == "Returns & Cancellations":
             PROJECT_DIR
             / "data"
             / "processed"
-            / "retailpulse_enriched.csv"
+            / "retailpulse_enriched.csv.gz"
         )
         df = pd.read_csv(file_path, parse_dates=["InvoiceDate"])
         return df
@@ -983,7 +983,7 @@ elif page == "Time Intelligence":
             PROJECT_DIR
             / "data"
             / "processed"
-            / "retailpulse_sales_features.csv"
+            / "retailpulse_sales_features.csv.gz"
         )
         return pd.read_csv(file_path, parse_dates=["InvoiceDate"])
 
@@ -1385,7 +1385,7 @@ elif page == "Data Explorer":
             PROJECT_DIR
             / "data"
             / "processed"
-            / "retailpulse_enriched.csv"
+            / "retailpulse_enriched.csv.gz"
         )
         return pd.read_csv(file_path)
 
