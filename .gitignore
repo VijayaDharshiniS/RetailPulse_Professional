@@ -1,0 +1,19 @@
+
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
+.env.*
+
+# Raw and large datasets
+data/raw/
+*.xlsx
+
+# Temporary files
+.streamlit/secrets.toml
+.DS_Store
+Thumbs.db
